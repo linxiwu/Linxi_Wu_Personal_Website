@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linxi Wu - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo">Linxi Wu</h1>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="profile">
+                    <div class="profile-image">
+                        <!-- Placeholder for profile image -->
+                        <img id="profile-img" src="assets/me.jpg" alt="Linxi Wu">
+                        <!-- Code for user to upload their own image later -->
+                        <!-- <img id="profile-img" src="assets/profile.jpg" alt="Linxi Wu"> -->
+                    </div>
+                    <div class="profile-content">
+                        <h2>About Me</h2>
+                        <p>I am <b>Linxi Wu</b>, a third-year undergraduate student at <a href="https://www.unc.edu/" target="_blank" rel="noopener noreferrer">University of North Carolina at Chapel Hill</a>, 
+                            double majoring in <a href="https://cs.unc.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a> and <a href="https://math.unc.edu/" target="_blank" rel="noopener noreferrer">Mathematics</a></p>
+                        <p>GPA: 3.913/4.0 (Dean's List)</p>
+                        <p>My research interests lie at the intersection of <b>large language models (LLMs), multimodal learning, and efficient inference optimization</b>. Specifically, I am passionate about developing scalable and efficient multimodal LLM architectures and exploring techniques to accelerate inference for real-world deployment.</p>
+                        <p>I am seeking <b>research opportunities (RA), internships, and full-time positions.</b></p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary-btn">Contact Me</a>
+                            <a href="PDF/Linxi Wu's Resume.pdf" class="btn secondary-btn" download>Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-card">
+                    <div class="education-logo">
+                        <img src="assets/unc_logo.jpg" alt="UNC Chapel Hill">
+                    </div>
+                    <div class="education-details">
+                        <h3>University of North Carolina at Chapel Hill</h3>
+                        <p class="education-period">2022-2026 (Expected)</p>
+                        <div class="education-majors">
+                            <p><strong>Major:</strong> Computer Science (B.S.)</p>
+                            <p><strong>Major:</strong> Mathematics (B.S.)</p>
+                            <p><strong>Minor:</strong> Statistics</p>
+                        </div>
+                        <div class="education-majors">
+                            <p><b>GPA</b>: 3.913/4.0 (Dean's List)</p>
+                        </div> 
+                        <div class="education-courses">
+                            <h4>Relevant Coursework:</h4>
+                            <p>Machine Learning, Deep Learning, Data Structures, Algorithm Analysis, Computer Systems, Linear Algebra, Optimization, Probability Theory, etc.</p>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="PDF/UNC Transcript.pdf" class="btn secondary-btn" download>Download Transcript</a>
+                            <!-- Code for user to upload their own transcript later -->
+                            <!-- <a href="assets/transcript.pdf" class="btn small-btn" download>Download Transcript</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences" class="section">
+            <div class="container">
+                <h2 class="section-title">Experiences</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Algorithm Development Intern</h3>
+                            <h4>China Unicom AI Innovation Center</h4>
+                            <p class="timeline-period"> June-August 2024</p>
+                            <p class="timeline-description">
+                                Fine-tuned LLaMA3-70B, LLaMA2-13B using LoRA/QLoRA, improving processing efficiency by 30% and accuracy by 20% in extracting fuzzy time information from customer conversations. Validated GPT-4 predictions with a 10,000-point dataset, enhancing model generalization for real-world NLP applications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Algorithm Development Intern</h3>
+                            <h4>Xi'an Xinfang Electronic Technology Company</h4>
+                            <p class="timeline-period">December 2023 - January 2024</p>
+                            <p class="timeline-description">
+                                Deployed Qwen2-72B for enterprise text processing, optimizing vLLM inference to boost speed by 20% and reduce computational overhead by 40%. Implemented Nginx-based load balancing, increasing throughput by 70% compared to llama.cpp-based inference.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Data Analysis Intern</h3>
+                            <h4>Dunhuang Smart Tourism</h4>
+                            <p class="timeline-period"> June-August 2023</p>
+                            <p class="timeline-description">
+                                Developed 20+ KPIs to optimize tourism strategies, increasing tourist satisfaction by 15%. Cleaned and standardized 100,000+ visitor feedback records, improving data accuracy by 40% and refining business intelligence insights.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">CONTACT</h2>
+                
+                <div class="social-icons">
+                    <a href="mailto:linxiw@unc.edu" class="social-icon">
+                        <div class="icon-circle">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span>linxiw@unc.edu</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/linxi-wu-176515269/" target="_blank" class="social-icon">
+                        <div class="icon-circle">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <span>LinkedIn</span>
+                    </a>
+                    
+                    <a href="#" target="_blank" class="social-icon">
+                        <div class="icon-circle">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span>Github</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Linxi Wu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
